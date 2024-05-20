@@ -4,7 +4,7 @@ import time
 
 import requests
 
-from .. import CheckIn
+from dailycheckin import CheckIn
 
 
 class BiliBili(CheckIn):
