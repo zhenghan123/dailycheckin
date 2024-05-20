@@ -26,4 +26,4 @@ jobs:
         run: cd ./dailycheckin
         
       - name: Run BILIBILI.py
-        run: python main.py
+        run: python ./bilibili/main.py
