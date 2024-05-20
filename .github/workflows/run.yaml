@@ -20,7 +20,7 @@ jobs:
         run: pip install requests
         
       - name: Install dependencies
-        run: pip install requirements.txt
+        run: pip install -r requirements.txt
         
       - name: Run BILIBILI.py
         run: python ./dailycheckin/bilibili/main.py
