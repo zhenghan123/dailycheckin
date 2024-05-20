@@ -19,5 +19,5 @@ jobs:
       - name: Install dependencies
         run: pip install requests
         
-      - name: Run ikuuu2.py
-        run: python ../dailycheckin/bilibili/main.py
+      - name: Run BILIBILI.py
+        run: python ./dailycheckin/bilibili/main.py
