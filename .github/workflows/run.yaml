@@ -20,4 +20,4 @@ jobs:
         run: pip install requests
         
       - name: Run BILIBILI.py
-        run: python ./dailycheckin/bilibili/main.py
+        run: python /dailycheckin/bilibili/main.py
