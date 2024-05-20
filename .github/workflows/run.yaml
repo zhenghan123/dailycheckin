@@ -19,5 +19,8 @@ jobs:
       - name: Install dependencies
         run: pip install requests
         
+      - name: Install dependencies
+        run: pip install requirements.txt
+        
       - name: Run BILIBILI.py
-        run: python /dailycheckin/bilibili/main.py
+        run: python ./dailycheckin/bilibili/main.py
