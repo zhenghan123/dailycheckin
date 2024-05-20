@@ -20,4 +20,4 @@ jobs:
         run: pip install requests
         
       - name: Run ikuuu2.py
-        run: python ./bilibili/main.py 
+        run: python ../dailycheckin/bilibili/main.py
