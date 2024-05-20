@@ -1,0 +1,23 @@
+name: 'PY script run'
+on:
+  schedule:
+    - cron:  '00 23 * * *' # 每日23:59运行
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  script_run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Install dependencies
+        run: pip install requests
+        
+      - name: Run ikuuu2.py
+        run: python ./bilibili/main.py 
